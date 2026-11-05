@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "mode": "live",
+  "snapshotId": "example-capture-2026-01-15",
+  "capturedAt": "2026-01-15T18:00:00Z",
+  "rawResults": [
+    {
+      "id": "trends-1",
+      "sourceTool": "x.get_trends_by_woeid",
+      "result": {
+        "data": [
+          {
+            "trend_name": "Example Topic Alpha",
+            "url": "https://x.com/search?q=Example%20Topic%20Alpha"
+          }
+        ]
+      }
+    },
+    {
+      "id": "search-1",
+      "sourceTool": "x.search_posts_all",
+      "result": {
+        "data": [
+          {
+            "id": "2011803053061046273",
+            "text": "EXAMPLE DATA (fictional post 1 about Example Topic Alpha) — not a real X post.",
+            "created_at": "2026-01-15T14:10:00Z",
+            "public_metrics": {
+              "like_count": 1200,
+              "retweet_count": 180,
+              "reply_count": 95,
+              "quote_count": 22
+            }
+          },
+          {
+            "id": "2011821927429046274",
+            "text": "EXAMPLE DATA (fictional post 2 about Example Topic Alpha) — not a real X post.",
+            "created_at": "2026-01-15T15:25:00Z",
+            "public_metrics": {
+              "like_count": 640,
+              "retweet_count": 70,
+              "reply_count": 40,
+              "quote_count": 9
+            }
+          },
+          {
+            "id": "2011840801797046275",
+            "text": "EXAMPLE DATA (fictional post 3 about Example Topic Alpha) — not a real X post.",
+            "created_at": "2026-01-15T16:40:00Z",
+            "public_metrics": {
+              "like_count": 210,
+              "retweet_count": 25,
+              "reply_count": 30,
+              "quote_count": 4
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "trends-23424977",
+      "sourceTool": "x.get_trends_by_woeid",
+      "result": {
+        "data": [
+          {
+            "trend_name": "Example Topic Beta",
+            "url": "https://x.com/search?q=Example%20Topic%20Beta"
+          }
+        ]
+      }
+    },
+    {
+      "id": "search-23424977",
+      "sourceTool": "x.search_posts_all",
+      "result": {
+        "data": [
+          {
+            "id": "2011803053061046276",
+            "text": "EXAMPLE DATA (fictional post 1 about Example Topic Beta) — not a real X post.",
+            "created_at": "2026-01-15T14:10:00Z",
+            "public_metrics": {
+              "like_count": 1200,
+              "retweet_count": 180,
+              "reply_count": 95,
+              "quote_count": 22
+            }
+          },
+          {
+            "id": "2011821927429046277",
+            "text": "EXAMPLE DATA (fictional post 2 about Example Topic Beta) — not a real X post.",
+            "created_at": "2026-01-15T15:25:00Z",
+            "public_metrics": {
+              "like_count": 640,
+              "retweet_count": 70,
+              "reply_count": 40,
+              "quote_count": 9
+            }
+          },
+          {
+            "id": "2011840801797046278",
+            "text": "EXAMPLE DATA (fictional post 3 about Example Topic Beta) — not a real X post.",
+            "created_at": "2026-01-15T16:40:00Z",
+            "public_metrics": {
+              "like_count": 210,
+              "retweet_count": 25,
+              "reply_count": 30,
+              "quote_count": 4
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "geographies": [
+    {
+      "woeid": 1,
+      "geography": "worldwide",
+      "topics": [
+        {
+          "trend": {
+            "name": "Example Topic Alpha",
+            "url": "https://x.com/search?q=Example%20Topic%20Alpha",
+            "provenance": {
+              "origin": "parent-supported-connector",
+              "retrievedAt": "2026-01-15T18:00:00Z",
+              "woeid": 1,
+              "geography": "worldwide",
+              "query": "{\"woeid\":1}",
+              "sourceTool": "x.get_trends_by_woeid",
+              "rawResultId": "trends-1"
+            }
+          },
+          "posts": [
+            {
+              "id": "2011803053061046273",
+              "url": "https://x.com/example_user/status/2011803053061046273",
+              "text": "EXAMPLE DATA (fictional post 1 about Example Topic Alpha) — not a real X post.",
+              "createdAt": "2026-01-15T14:10:00Z",
+              "metrics": {
+                "likes": 1200,
+                "reposts": 180,
+                "replies": 95,
+                "quotes": 22
+              },
+              "provenance": {
+                "origin": "parent-supported-connector",
+                "retrievedAt": "2026-01-15T18:00:00Z",
+                "woeid": 1,
+                "geography": "worldwide",
+                "query": "\"Example Topic Alpha\" lang:en -is:retweet",
+                "sourceTool": "x.search_posts_all",
+                "rawResultId": "search-1",
+                "parameters": {
+                  "query": "\"Example Topic Alpha\" lang:en -is:retweet",
+                  "start_time": "2026-01-08T18:00:00Z"
+                }
+              }
+            },
+            {
+              "id": "2011821927429046274",
+              "url": "https://x.com/example_user/status/2011821927429046274",
+              "text": "EXAMPLE DATA (fictional post 2 about Example Topic Alpha) — not a real X post.",
+              "createdAt": "2026-01-15T15:25:00Z",
+              "metrics": {
+                "likes": 640,
+                "reposts": 70,
+                "replies": 40,
+                "quotes": 9
+              },
+              "provenance": {
+                "origin": "parent-supported-connector",
+                "retrievedAt": "2026-01-15T18:00:00Z",
+                "woeid": 1,
+                "geography": "worldwide",
+                "query": "\"Example Topic Alpha\" lang:en -is:retweet",
+                "sourceTool": "x.search_posts_all",
+                "rawResultId": "search-1",
+                "parameters": {
+                  "query": "\"Example Topic Alpha\" lang:en -is:retweet",
+                  "start_time": "2026-01-08T18:00:00Z"
+                }
+              }
+            },
+            {
+              "id": "2011840801797046275",
+              "url": "https://x.com/example_user/status/2011840801797046275",
+              "text": "EXAMPLE DATA (fictional post 3 about Example Topic Alpha) — not a real X post.",
+              "createdAt": "2026-01-15T16:40:00Z",
+              "metrics": {
+                "likes": 210,
+                "reposts": 25,
+                "replies": 30,
+                "quotes": 4
+              },
+              "provenance": {
+                "origin": "parent-supported-connector",
+                "retrievedAt": "2026-01-15T18:00:00Z",
+                "woeid": 1,
+                "geography": "worldwide",
+                "query": "\"Example Topic Alpha\" lang:en -is:retweet",
+                "sourceTool": "x.search_posts_all",
+                "rawResultId": "search-1",
+                "parameters": {
+                  "query": "\"Example Topic Alpha\" lang:en -is:retweet",
+                  "start_time": "2026-01-08T18:00:00Z"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "woeid": 23424977,
+      "geography": "United States",
+      "topics": [
+        {
+          "trend": {
+            "name": "Example Topic Beta",
+            "url": "https://x.com/search?q=Example%20Topic%20Beta",
+            "provenance": {
+              "origin": "parent-supported-connector",
+              "retrievedAt": "2026-01-15T18:00:00Z",
+              "woeid": 23424977,
+              "geography": "United States",
+              "query": "{\"woeid\":23424977}",
+              "sourceTool": "x.get_trends_by_woeid",
+              "rawResultId": "trends-23424977"
+            }
+          },
+          "posts": [
+            {
+              "id": "2011803053061046276",
+              "url": "https://x.com/example_user/status/2011803053061046276",
+              "text": "EXAMPLE DATA (fictional post 1 about Example Topic Beta) — not a real X post.",
+              "createdAt": "2026-01-15T14:10:00Z",
+              "metrics": {
+                "likes": 1200,
+                "reposts": 180,
+                "replies": 95,
+                "quotes": 22
+              },
+              "provenance": {
+                "origin": "parent-supported-connector",
+                "retrievedAt": "2026-01-15T18:00:00Z",
+                "woeid": 23424977,
+                "geography": "United States",
+                "query": "\"Example Topic Beta\" lang:en -is:retweet",
+                "sourceTool": "x.search_posts_all",
+                "rawResultId": "search-23424977",
+                "parameters": {
+                  "query": "\"Example Topic Beta\" lang:en -is:retweet",
+                  "start_time": "2026-01-08T18:00:00Z"
+                }
+              }
+            },
+            {
+              "id": "2011821927429046277",
+              "url": "https://x.com/example_user/status/2011821927429046277",
+              "text": "EXAMPLE DATA (fictional post 2 about Example Topic Beta) — not a real X post.",
+              "createdAt": "2026-01-15T15:25:00Z",
+              "metrics": {
+                "likes": 640,
+                "reposts": 70,
+                "replies": 40,
+                "quotes": 9
+              },
+              "provenance": {
+                "origin": "parent-supported-connector",
+                "retrievedAt": "2026-01-15T18:00:00Z",
+                "woeid": 23424977,
+                "geography": "United States",
+                "query": "\"Example Topic Beta\" lang:en -is:retweet",
+                "sourceTool": "x.search_posts_all",
+                "rawResultId": "search-23424977",
+                "parameters": {
+                  "query": "\"Example Topic Beta\" lang:en -is:retweet",
+                  "start_time": "2026-01-08T18:00:00Z"
+                }
+              }
+            },
+            {
+              "id": "2011840801797046278",
+              "url": "https://x.com/example_user/status/2011840801797046278",
+              "text": "EXAMPLE DATA (fictional post 3 about Example Topic Beta) — not a real X post.",
+              "createdAt": "2026-01-15T16:40:00Z",
+              "metrics": {
+                "likes": 210,
+                "reposts": 25,
+                "replies": 30,
+                "quotes": 4
+              },
+              "provenance": {
+                "origin": "parent-supported-connector",
+                "retrievedAt": "2026-01-15T18:00:00Z",
+                "woeid": 23424977,
+                "geography": "United States",
+                "query": "\"Example Topic Beta\" lang:en -is:retweet",
+                "sourceTool": "x.search_posts_all",
+                "rawResultId": "search-23424977",
+                "parameters": {
+                  "query": "\"Example Topic Beta\" lang:en -is:retweet",
+                  "start_time": "2026-01-08T18:00:00Z"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

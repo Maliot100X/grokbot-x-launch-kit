@@ -1,0 +1,31 @@
+{
+  "name": "grokbot-x-launch-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "demo": "npm run build && node dist/cli.js .data/fixture-state.json",
+    "live:snapshot": "npm run build && node dist/live-cli.js",
+    "example": "npm run build && node dist/example-cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "description": "Research-first X launch pipeline for Grok Bot users",
+  "license": "MIT"
+}

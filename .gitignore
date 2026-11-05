@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.data/
+reference/
+*.tmp
+*.log
+.env
+.env.*
+*.pem
+*.key
+secrets*
+live-*-snapshot.json
+live-*-state.json
