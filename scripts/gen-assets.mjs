@@ -1,4 +1,5 @@
 // Generates the six coordinated README panels (navy/cyan). Illustrative example data only.
+// Writes ONLY docs/assets/<panel>.svg fallbacks. Generated art (docs/assets/scenes, docs/brand) is never touched.
 import { writeFileSync, mkdirSync } from 'node:fs';
 const W=1200,H=420;const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
 const card=(x,y,w,h,title,lines,accent='#22d3ee')=>`<g><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14" fill="#0f1d3a" stroke="#1e3a6b"/><rect x="${x}" y="${y}" width="6" height="${h}" rx="3" fill="${accent}"/><text x="${x+22}" y="${y+34}" font-size="18" font-weight="700" fill="#e2f3ff">${esc(title)}</text>${lines.map((l,i)=>`<text x="${x+22}" y="${y+64+i*26}" font-size="15" fill="#9fb7d9">${esc(l)}</text>`).join('')}</g>`;
@@ -42,4 +43,4 @@ const panels={
   'Panel describing supported scheduled polling and capabilities that are deliberately not faked.'],
 };
 mkdirSync('docs/assets',{recursive:true});
-for(const [id,[k,t,b,d]] of Object.entries(panels)) writeFileSync(`docs/assets/${id}.svg`,frame(id,k,t,b,d));
+for(const [id,[k,t,b,d]] of Object.entries(panels)){const out=`docs/assets/${id}.svg`;if(!out.endsWith(".svg"))throw new Error("refusing non-SVG write");writeFileSync(out,frame(id,k,t,b,d));}
