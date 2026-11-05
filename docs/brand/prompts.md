@@ -21,3 +21,13 @@ All assets were generated with the Grok Bot native image generator, using the he
 2. Describe one clear metaphor (max three objects) and where the observatory sits.
 3. End with the palette and the "No readable text…" line. Pass `docs/brand/originals/hero.jpg` as the reference image, 16:9.
 4. Reject results with garbled text, extra logos, money/crypto symbols, or a different rendering style.
+
+## Creator identity extension
+
+Use the previously generated banner as a visual reference. Prompt for the new text-free background asset:
+
+```text
+Premium branded X header background for GrokBot X Launch Kit by GitHub creator Maliot100X and project X Launch Traction @CLAWRENAi. Preserve this precise observatory scene at the RIGHT HALF: elegant futuristic silver satellite observatory on an ink-black elevated deck, luminous cyan scanning ring, softly glowing mint/cyan particles, faint network grid and distant deep space horizon. LEFT HALF: mostly plain uncluttered midnight navy negative space for professional title typography. Same polished editorial 3D sci-fi research aesthetic, high contrast lighting, restrained teal and violet accents, sophisticated developer launch identity, no trading coins, no crypto charts. No words, no letters, no numerals, no logos, no watermark anywhere; names and full URL will be typeset afterwards in font-rendering code for perfect spelling. A cinematic panoramic composition preserving all important scenic elements within right 40% of canvas, ideal for 3:1 crop to X profile header plus overlay text on empty left.
+```
+
+Deterministic typography overlay renders these exact strings in DejaVu fonts: `GROK BOT / OPEN-SOURCE STARTER`, `X LAUNCH KIT`, `Research. Evidence. Drafts. Approval.`, `by Maliot100X`, `X Launch Traction · @CLAWRENAi`, and `github.com/Maliot100X/grokbot-x-launch-kit`. Profile text is `GROK BOT X` / `X LAUNCH KIT`. Exact output is in `identity/`, including 1500×500 X header and 400/800-pixel avatars.

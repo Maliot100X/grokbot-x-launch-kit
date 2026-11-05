@@ -168,8 +168,8 @@ Image, video, and research plugins (for example Canva, Remotion, Parallel) are a
 ## Brand kit
 <table>
 <tr>
-<td width="22%" align="center"><img src="docs/brand/derived/profile-400.png" alt="Profile mark: isometric observatory with a teal ring on ink navy" width="160"><br><sub>Profile 400×400<br><code>docs/brand/derived/profile-400.png</code></sub></td>
-<td><img src="docs/brand/derived/x-header-1500x500.jpg" alt="Wide header: observatory on the right, open navy space on the left for text" width="100%"><br><sub>X header 1500×500 · <code>docs/brand/derived/x-header-1500x500.jpg</code> · GitHub social preview 1280×640: <code>docs/brand/derived/github-social-1280x640.jpg</code></sub></td>
+<td width="22%" align="center"><img src="docs/brand/identity/profile-400.png" alt="Grok Bot X Launch Kit profile picture with observatory and exact project name" width="160"><br><sub>Profile 400×400<br><code>docs/brand/identity/profile-400.png</code></sub></td>
+<td><img src="docs/brand/identity/x-header-1500x500.jpg" alt="Branded header: GrokBot X Launch Kit by Maliot100X, X Launch Traction, @CLAWRENAi, and the full repository URL" width="100%"><br><sub>X header 1500×500 · <code>docs/brand/identity/x-header-1500x500.jpg</code> · GitHub social preview 1280×640: <code>docs/brand/derived/github-social-1280x640.jpg</code></sub></td>
 </tr>
 </table>
 
